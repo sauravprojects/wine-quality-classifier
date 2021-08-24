@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Falvanoids <= 1.575\nentropy = 1.562\nsamples = 124\nvalue = [36, 36, 52]\nclass = 3"] ;
+1 [label="Color_intensity <= 3.825\nentropy = 0.785\nsamples = 47\nvalue = [36, 0, 11]\nclass = 1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 10\nvalue = [0, 0, 10]\nclass = 3"] ;
+1 -> 2 ;
+3 [label="entropy = 0.179\nsamples = 37\nvalue = [36, 0, 1]\nclass = 1"] ;
+1 -> 3 ;
+4 [label="Proline <= 740.0\nentropy = 0.997\nsamples = 77\nvalue = [0, 36, 41]\nclass = 3"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.169\nsamples = 40\nvalue = [0, 1, 39]\nclass = 3"] ;
+4 -> 5 ;
+6 [label="entropy = 0.303\nsamples = 37\nvalue = [0, 35, 2]\nclass = 2"] ;
+4 -> 6 ;
+}
